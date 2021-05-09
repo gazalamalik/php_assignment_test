@@ -47,15 +47,15 @@ public function qus_show($qus){
 
     echo $qus;
 
-   // $query= "select * from question2";
-  //  $getQuery = pg_query($this->db, $query);
+    $query= "select * from question2";
+   $getQuery = pg_query($this->db, $query);
     
- //   $responseArray = array();
- //   while($data = pg_fetch_array($getQuery)){
+   $responseArray = array();
+   while($data = pg_fetch_array($getQuery)){
      
-   //     $responseArray[] = $data;
-   //  }
-    //    return $responseArray;
+       $responseArray[] = $data;
+    }
+       return $responseArray;
 
 
 }
